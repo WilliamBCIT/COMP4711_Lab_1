@@ -36,10 +36,15 @@ function average() {
 }
 
 function toString() {
-    $result = $this->first_name . ' ' . $this->surname;
+    
+    $result = "______________________\n";
+            
+    $result .= $this->first_name . ' ' . $this->surname;  
     $result .= ' ('.$this->average().")\n";
+    $result .= "______________________\n\n\n\n";
+    
     foreach($this->emails as $which=>$what)
-        $result .= $which . ': '. $what. "\n";
+        $result .= $which . ': '. $what. "\n\n";
     $result .= "\n";
     return '<pre>'.$result.'</pre>';
 }

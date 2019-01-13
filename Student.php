@@ -1,16 +1,11 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of Student
+ * Student - Class represents student's contact information and grades.
  *
  * @author William
  */
+
 class Student {
     
     function __construct() {

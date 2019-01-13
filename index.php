@@ -8,6 +8,11 @@
 
     <body>
         <?php
+        
+        /**
+         * Test of Student class output.
+         */
+        
         include('Student.php');
 
         $students = array();
@@ -41,12 +46,11 @@
         $third->add_grade(70);
         $third->add_grade(90);
         $students['w789'] = $third;
-        
+
         ksort($students); // one of the many sort functions
-        
+
         foreach ($students as $student)
             echo $student->toString();
-        
         ?>
 
     </body>
